@@ -26,7 +26,8 @@ Fulcrum::Application.routes.draw do
 
   devise_for :users, :controllers => { 
       :confirmations => "confirmations", 
-      :registrations => "registrations"
+      :registrations => "registrations",
+      :omniauth_callbacks => :omniauth_callbacks
     }
 
   match 'testcard' => 'static#testcard'

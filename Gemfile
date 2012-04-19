@@ -20,8 +20,11 @@ gem 'transitions', '0.0.9', :require => ["transitions", "active_record/transitio
 gem 'fastercsv', '1.5.3', :platforms => :ruby_18
 # (using standard csv lib if ruby version is 1.9)
 
+gem 'omniauth'
+gem 'omniauth-google-oauth2', '~> 0.1.9'
+
 group :production do
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :development, :test do
